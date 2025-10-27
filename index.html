@@ -3,132 +3,298 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>디미디 카드뉴스</title>
-
+	<title>짝퉁이 아니라 듀프(DUPE)라고?</title>
+	
 	<style type="text/css">
-		html{
-    	font-family: 'Paperlogy';
-    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
-    	font-weight: 900;
-    	font-display: swap;
-    }
-		html{
-    	font-family: 'Pretendard';
-    	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
-    	font-weight: 100;
-    	font-display: swap;
+        
+		@font-face {
+							font-family: 'Paperlogy';
+							src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+						 font-weight: 700;
+					   font-display: swap;
 }
+		@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Gothic+A1:wght@100;400;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+    
+    
+    html, body {
+        
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: black; 
+        
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth; 
+    }
+
+
+    .gothic-a1-regular {
+  		font-family: "Gothic A1", sans-serif;
+  		font-style: normal;
+  		font-weight: 100;
+			font-display: swap;
+			line-height: 1.6;
+			word-break: keep-all;
+    }
+    
+    
+    header, section, .wrap {
+        width: 100%;
+        max-width: none;
+        margin: auto;
+        padding: 0;
+    }
+    
+    
+    section {
+        background: black;
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        
+        
+        min-height: 100vh;
+        scroll-snap-align: start;
+    }
+    
+    
+    .bg-shop{
+        background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN21kaTBycWJkZTk2aW9qdmx2OW52bW1xenZ5Njk1MTZ4NTR3azVpeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MEgGD8bV72hfq/giphy.gif);
+        background-size: cover;
+        background-position: center; 
+        background-attachment: fixed; 
+    }
+
+
+    section {
+        background: black;
+        padding: 100px 0;
+    }
+
+    header {
+        margin: auto;
+        padding: 20px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom:0px; 
+    }
+    
+    .wrap img + img {
+        margin-top: 0; 
+    }
+    
+   
+    h3, h4, h5, h6, h7, h8, h9, h10, h11 { 
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: 900;
+        margin: 20px 0 10px 0;
+        font-size: 50px; 
+        border-left: 10px solid white; 
+        padding-left: 15px;
+    }
+    
+    .title-bar {
+        border-left: 10px solid white !important; 
+        padding-left: 15px !important;
+    }
+    
+   
+    p {
+        color: white;
+        font-family: 'Gothic A1', sans-serif;
+        font-weight: 500;
+        font-size: 30px; 
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+   
+    .wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px; 
+    }
+
+   
+    .text-block {
+        background: rgba(0, 0, 0, 0.9);
+        border-radius:0px; 
+        padding: 20px; 
+        margin-top: 0px; 
+    }
+
+	footer{
+		background: white;
+		width: 100%;
+		margin: auto;
+		padding: 50px 0;
+		text-align: center;
+        scroll-snap-align: none;
 	}
-		body,h1,p{margin: 0;}
-		body{background: linear-gradient(#12FF3D,#FCFFFA);#12FF3D;margin: 0;}
-		header{background:;width:800px;margin:auto;}
-		section{width: 800px;margin: auto;}
-		img{width: 100%;}
-		h1,h3,h4,h5,h6,h7,h8,h9,h10,h11{font-weight: 900;font-size: 30px;font-family:'Paperlogy'; }
-		h2{margin: 100px;}
-		p{font-weight: 200;font-size: 20px;font-family:'Pretendard'}
+    
+    footer p {
+        color: black; 
+        font-size: 25px;
+        margin: 5px 0;
+        padding: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    footer a {
+        color: #333;
+        text-decoration: none;
+    }
+
 	</style>
+
 </head>
 <body>
-	<nav></nav>
-	<heder>
-		<h1>MZ세대들에게 유행인 듀프 소비 알아보기</h1>
-
-	</heder>
-	<section>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 1.jpg">
-		
-			
-		</h2>
-		
-	</section>
-	<section>
-		<img src="Slide 4_3 - 2.jpg">
-		<h3>듀프(DUPE)란?
-			
-		</h3>
-		<p>‘Duplicate(복제하다)’에서 유래한 용어로, 
-상표권을 침해하지 않으면서 명품이나 고가 브랜드의 제품의 
-디자인이나 기능이 비슷한 ‘가성비 대체품'을 의미해요</p>
-			
-		
-	</section>
-	<section>
-		<img src="Slide 4_3 - 3.jpg">
-		<h4>
-			듀프의 주 소비층은 바로 MZ!
-		</h4>
-		<p>최근 MZ세대들 사이에서 듀프 소비가 유행 중이에요!
-		대체품 구매를 드러내는 것을 꺼리던 과거와 달리
-		하나의 소비문화가 되고 있는 듀프 문화의 예시를 알아볼까요? 
-		</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 5.jpg">
-		<h5>
-			포터 숄더백의 듀프템은? 유니클로!
-		</h5>
-		<p>대표적으로 최근 출시된 유니클로(Uniqlo)의 
-		‘멀티 포켓 숄더백’이 있어요 
-		유시다 포터(유니클로+요시다 포터)로 불리기도 하는데요 
-		브랜드 요시다 포터의 탱커 숄더백을 닮았기 때문이죠
-		포터(Porter)맛 숄더백이라고 불리며 
-		품절대란이 일어나기도 했어요!</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 4.jpg">
-		<h6>
-			다양한 분야에서 나타나는 듀프소비
-		</h6>
-		<p>패션 외에도 다이소의 손앤박 컬러밤은 
-	샤넬 립앤치크밤의 듀프템으로 꼽힙니다
-	색상이나 지속력 등에는 큰 차이가 없지만 
-	가격은 무려 23배 차이가 나는 것을 통해 합리성을 알 수 있죠!
-	이 외에도 일본 삿포로는 스위스 체르마트의 듀스 여행지로 꼽히는등 다양한 분야에서 듀스소비가 행해지고 있습니다😆</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 6.jpg">
-		<h7>
-			그렇다면 이 듀프소비가 유행하게 된 이유가 뭘까요?
-		</h7>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 7.jpg">
-		<h8>
-			첫번째.SNS & 유튜브 트렌드
-		</h8>
-		<p>듀프는 SNS와 유튜브에서 콘텐츠화되며 더 빠르게 확산되고 있어요. 틱톡에서 ‘듀프’를 검색하면, 오리지널 제품과 듀프 제품을 비교하거나 듀프 쇼핑을 자랑하는 영상이 높은 조회수를 기록하기도 하죠 이런 구매 리뷰가 MZ세대들의 소비 욕구를 자극하여 소비문화까지 영향을 미친 것이죠</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 8.jpg">
-		<h9>
-			두번째.계속되는 고물가 시대
-		</h9>
-		<p>경기 침체, 고물가, 소비 양극화와 같은 경제적 배경 속에서 
-		소비자들은 ‘가격 대비 최대의 만족’을 추구하는 심리가 커졌어요 그로 인해 경제적 부담을 줄여주고 고품질 제품을 저렴하게 
-		이용할 수 있는 듀프 제품을 선호하게 된거죠!</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 10.jpg">
-		<h10>
-			세번째.MZ의 놀이로 자리잡은 듀프
-		</h10>
-		<p>MZ세대는 듀프 소비 자체를 즐거워하고 있어요
-		미국 시장조사기업 YPulse의 설문조사에 따르면, 
-		응답자의 51%는 “듀프를 찾는 것이 즐겁다”고 답했어요  
-		이는 듀프 소비가 이들에게 경제적인 선택을 넘어 
-		새로운 문화로 자리 잡고 있음을 보여주죠.</p>
-	</section>
-	<section>
-		<img src="Slide 4_3 - 11.jpg">
-		<h11>
-			이제는 유행을 넘어 우리의 일상이 되어버린 듀프
-		</h11>
-		<p>여러분들은 듀프를 어떻게 생각하시나요?</p>
+	
+	<section class="bg-shop">
+		<div class="wrap">
+			<img src="1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+1'" alt="이미지 1">
+			<img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+2'" alt="이미지 2">
+            
+            
+            <div class="text-block">
+				<h3 class="title-bar">듀프(DUPE)가 뭔가요?</h3>
+				<p>듀프란
+			 <span style="font-size: 30px;
+			 font-weight: 700;
+			  display: inline-block; color: #12FF3D;">‘Duplicate(복제하다)’</span>에서 유래한 용어로,
+				상표권을 침해하지 않으면서 명품이나 고가 브랜드의 제품의
+				디자인이나 기능이 비슷한 ‘가성비 대체품'을 의미해요.흔히 오해하기 쉬운 짝퉁과는 다른 개념이에요!</p>
+            </div>
+		</div>
 	</section>
 	
-	<footer></footer>
+
+	<section>
+		<div class="wrap">
+				<img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+3'" alt="이미지 3">
+            <div class="text-block">
+				<h4 class="title-bar">듀프의 주 소비층은 바로 MZ!</h4>
+				<p>최근 MZ세대들 사이에서 듀프 소비가 유행 중이에요!대체품 구매를 드러내는 것을 꺼리던 과거와 달리
+				하나의 소비문화가 되고 있는 듀프 문화의 예시를 알아볼까요?</p>
+            </div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="wrap">
+		<img src="5.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+5'" alt="이미지 5">
+            <div class="text-block">
+                <h5 class="title-bar">
+                    포터 숄더백의 듀프템은? 유니클로!
+                </h5>
+                <p>대표적으로 최근 출시된 <span style="color: #EC1E23;">유니클로</span>(Uniqlo)의 ‘멀티 포켓 숄더백’이 있어요
+                유시다 포터(<span style="color: #EC1E23;">유니클로</span>+요시다 포터)로 불리기도 하는데요
+                브랜드 요시다 포터의 탱커 숄더백을 닮았기 때문이죠
+                포터(Porter)맛 숄더백이라고 불리며
+                품절대란이 일어나기도 했어요!</p>
+            </div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+		<img src="4.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+4'" alt="이미지 4">
+            <div class="text-block">
+                <h6 class="title-bar">
+                    다양한 분야에서 나타나는 듀프소비
+                </h6>
+                <p>패션 외에도 다양한 분야에서 듀프 제품을 확인할 수 있는데요 다이소의 손앤박 컬러밤은 샤넬 립앤치크밤의 듀프템으로
+                색상이나 지속력 등에는 큰 차이가 없지만 가격은 무려 23배 차이가 나는 것을 통해 듀프제품들의 합리성을 알 수 있죠!
+                이 외에도 일본 삿포로는 스위스 체르마트의 듀스 여행지로 꼽히는등 다양한 분야에서 듀스소비가 행해지고 있어요😯</p>
+            </div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+			
+			<h4 style="color: #12FF3D; text-align: center; border-left: none; padding-left: 0;">
+			그렇다면 이 듀프소비가 유행하게 된 이유가 뭘까요?
+			</h4>
+			
+			<div style="text-align: center; padding: 30px 0;">
+                <span style="font-size: 450px; display: inline-block; color: white;">🤔</span>
+            </div>
+		</div>
+	</section>
+
+	<section style="color:white;">
+		<div class="wrap">
+			<img src="7.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+7'" alt="이미지 7">
+            <div class="text-block">
+				<h4 class="title-bar">
+				<span style="font-size: 55px;
+			 font-weight: 700;
+			  display: inline-block; color: #12FF3D;">첫번째</span>:SNS & 유튜브 트렌드
+				</h4>
+				<p>듀프는 SNS와 유튜브에서 콘텐츠화되며 더 빠르게 확산되고 있어요. 틱톡에서 ‘듀프’를 검색하면, 오리지널 제품과 듀프 제품을 비교하거나 듀프 쇼핑을 자랑하는 영상이 높은 조회수를 기록고있는데요 이런 구매 리뷰가 MZ세대들의 소비 욕구를 자극하여 소비문화까지 영향을 미친 것이죠</p>
+            </div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="wrap">
+		<img src="don-eulo-gadeughan-sang-wi-byu-syoping-kateu.jpg">
+            <div class="text-block">
+            	<h4 class="title-bar">
+            	<span style="font-size: 55px;
+			 font-weight: 700;
+			  display: inline-block; color: #12FF3D;">두번째</span>:계속되는 고물가 시대 
+                
+                </h4>
+                <p>경기 침체, 고물가, 소비 양극화와 같은 경제적 배경 속에서
+                소비자들은 ‘가격 대비 최대의 만족’을 추구하는 심리가 커졌어요 그로 인해 경제적 부담을 줄여주고 고품질 제품을 저렴하게
+                이용할 수 있는 듀프 제품을 선호하게 된거죠!</p>
+            </div>
+		</div>
+	</section>
+
+	 	
+	<section>
+		<div class="wrap">
+			<img src="9.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+9'" alt="이미지 9">
+            <div class="text-block">
+                <h4 class="title-bar">
+                	<span style="font-size: 55px;
+			 font-weight: 700;
+			  display: inline-block; color: #12FF3D;">세번째</span>:MZ의 놀이로 자리잡은 듀프
+                </h4>
+                <p>미국 시장조사기업 YPulse의 설문조사에 따르면,응답자의 51%는 “듀프를 찾는 것이 즐겁다”고 답했어요.
+                이 설문조사 결과를 통해서 듀프 소비가 MZ세대에게 경제적인 선택을 넘어
+                새로운 문화로 자리 잡고 있음을 보여주죠.</p>
+            </div>
+		</div>
+	</section>
+
+	<section>
+		<div class="wrap">
+		<h4 style="text-align: center; border-left: none;"><span style="font-size: 75px;
+			 font-weight: 900;
+			  display: inline-block; color: #12FF3D;">이제는 유행을 넘어 우리의 일상이 되어버린 듀프</span>
+			
+		</h4>
+
+		<p style="text-align: center;">여러분들은 듀프를 어떻게 생각하시나요?</p>
+	</div>
+	</section>
+	
+<footer>
+	<p>© 2025 Daeun Lee. All rights reserved.</p>
+	<p><a href="#">이용약관</a> |
+	 	<a href="#">개인정보처리방침</a></p>
+</footer>
+
+
 </body>
 </html>
+
