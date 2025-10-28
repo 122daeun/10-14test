@@ -7,11 +7,7 @@
 	
 	<style type="text/css">
         
-		@font-face {
-							font-family: 'Paperlogy';
-							src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
-						 font-weight: 700;
-					   font-display: swap;
+	
 }
 		@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Gothic+A1:wght@100;400;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
     
@@ -31,14 +27,13 @@
 
 
     .gothic-a1-regular {
-  		font-family: "Gothic A1", sans-serif;
-  		font-style: normal;
-  		font-weight: 100;
+  		font-family: "Gothic A1", sans-serif;
+  		font-style: normal;
+  		font-weight: 100-900;
 			font-display: swap;
 			line-height: 1.6;
 			word-break: keep-all;
     }
-    
     
     header, section, .wrap {
         width: 100%;
@@ -46,7 +41,6 @@
         margin: auto;
         padding: 0;
     }
-    
     
     section {
         background: black;
@@ -150,6 +144,28 @@
         text-decoration: none;
     }
 
+	/* 추가: 흰색 배경 섹션용 클래스 (세 섹션에만 적용) */
+	.white-section {
+		background-color: white !important;
+		color: black !important;
+	}
+	.white-section .text-block {
+		background: white !important;
+	}
+	.white-section h4, .white-section h5, .white-section h6 {
+		color: black !important;
+	}
+	.white-section .title-bar {
+		border-left-color: black !important;
+		color: black !important;
+	}
+	.white-section p {
+		color: black !important;
+	}
+	.white-section img {
+		
+	}
+
 	</style>
 
 </head>
@@ -166,7 +182,7 @@
 				<p>듀프란
 			 <span style="font-size: 30px;
 			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">‘Duplicate(복제하다)’</span>에서 유래한 용어로,
+			  display: inline-block; color: #12FF3D;">‘Duplicate(복제하다)’</span>에서 유래한 용어로,
 				상표권을 침해하지 않으면서 명품이나 고가 브랜드의 제품의
 				디자인이나 기능이 비슷한 ‘가성비 대체품'을 의미해요.흔히 오해하기 쉬운 짝퉁과는 다른 개념이에요!</p>
             </div>
@@ -179,8 +195,7 @@
 				<img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+3'" alt="이미지 3">
             <div class="text-block">
 				<h4 class="title-bar">듀프의 주 소비층은 바로 MZ!</h4>
-				<p>최근 MZ세대들 사이에서 듀프 소비가 유행 중이에요!대체품 구매를 드러내는 것을 꺼리던 과거와 달리
-				하나의 소비문화가 되고 있는 듀프 문화의 예시를 알아볼까요?</p>
+				<p>최근 MZ세대들 사이에서 듀프 소비가 유행 중이에요! 대체품 구매를 드러내는 것을 꺼리던 과거와 달리 하나의 소비문화가 되고 있는 듀프 문화의 예시를 알아볼까요?</p>
             </div>
 		</div>
 	</section>
@@ -217,7 +232,6 @@
 
 	<section>
 		<div class="wrap">
-			
 			<h4 style="color: #12FF3D; text-align: center; border-left: none; padding-left: 0;">
 			그렇다면 이 듀프소비가 유행하게 된 이유가 뭘까요?
 			</h4>
@@ -228,28 +242,30 @@
 		</div>
 	</section>
 
-	<section style="color:white;">
+
+	<section class="white-section">
 		<div class="wrap">
-			<img src="7.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+7'" alt="이미지 7">
+			<img src="7.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+7'" alt="이미지 7">
             <div class="text-block">
 				<h4 class="title-bar">
 				<span style="font-size: 55px;
 			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">첫번째</span>:SNS & 유튜브 트렌드
+			  display: inline-block; color: #12FF3D;">첫번째</span>:SNS & 유튜브 트렌드
 				</h4>
-				<p>듀프는 SNS와 유튜브에서 콘텐츠화되며 더 빠르게 확산되고 있어요. 틱톡에서 ‘듀프’를 검색하면, 오리지널 제품과 듀프 제품을 비교하거나 듀프 쇼핑을 자랑하는 영상이 높은 조회수를 기록고있는데요 이런 구매 리뷰가 MZ세대들의 소비 욕구를 자극하여 소비문화까지 영향을 미친 것이죠</p>
+				<p>듀프는 SNS와 유튜브에서 콘텐츠화되며 더 빠르게 확산되고 있어요. 틱톡에서 ‘듀프’를 검색하면, 오리지널 제품과 듀프 제품을 비교하거나 듀프 쇼핑을 자랑하는 영상이 높은 조회수를 기록고있는데요. 이런 구매 리뷰가 MZ세대들의 소비 욕구를 자극하여 소비문화까지 영향을 미친 것이죠.</p>
             </div>
 		</div>
 	</section>
 	
-	<section>
+	<!-- 변경: 이 섹션(두번째)도 흰색으로 -->
+	<section class="white-section">
 		<div class="wrap">
-		<img src="don-eulo-gadeughan-sang-wi-byu-syoping-kateu.jpg">
+		<img src="don-eulo-gadeughan-sang-wi-byu-syoping-kateu.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+두번째'" alt="이미지 두번째">
             <div class="text-block">
             	<h4 class="title-bar">
             	<span style="font-size: 55px;
 			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">두번째</span>:계속되는 고물가 시대 
+			  display: inline-block; color: #12FF3D;">두번째</span>:계속되는 고물가 시대 
                 
                 </h4>
                 <p>경기 침체, 고물가, 소비 양극화와 같은 경제적 배경 속에서
@@ -260,14 +276,15 @@
 	</section>
 
 	 	
-	<section>
+
+	<section class="white-section">
 		<div class="wrap">
-			<img src="9.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+9'" alt="이미지 9">
+			<img src="9.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+9'" alt="이미지 9">
             <div class="text-block">
                 <h4 class="title-bar">
                 	<span style="font-size: 55px;
 			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">세번째</span>:MZ의 놀이로 자리잡은 듀프
+			  display: inline-block; color: #12FF3D;">세번째</span>:MZ의 놀이로 자리잡은 듀프
                 </h4>
                 <p>미국 시장조사기업 YPulse의 설문조사에 따르면,응답자의 51%는 “듀프를 찾는 것이 즐겁다”고 답했어요.
                 이 설문조사 결과를 통해서 듀프 소비가 MZ세대에게 경제적인 선택을 넘어
@@ -280,7 +297,7 @@
 		<div class="wrap">
 		<h4 style="text-align: center; border-left: none;"><span style="font-size: 75px;
 			 font-weight: 900;
-			  display: inline-block; color: #12FF3D;">이제는 유행을 넘어 우리의 일상이 되어버린 듀프</span>
+			  display: inline-block; color: #12FF3D;">이제는 유행을 넘어 우리의 일상이 되어버린 듀프</span>
 			
 		</h4>
 
@@ -297,4 +314,3 @@
 
 </body>
 </html>
-
