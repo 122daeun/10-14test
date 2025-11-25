@@ -1,316 +1,476 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>짝퉁이 아니라 듀프(DUPE)라고?</title>
-	
-	<style type="text/css">
-        
-	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css" type="text/css"/>
+
+
+
+		<title>하우스 장르 알아보기!</title>
+
+		<style>
+		@font-face {
+    font-family: 'HsJandari';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/HSJandari.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;}
+
+		* {padding: 0;
+  		  box-sizing: border-box;}
+
+		body {font-family: 'Apple SD Gothic Neo', sans-serif; margin: 0;
+			}
+
+	.page-wrap p{
+			font-size:20px;
+		   }
+	.page-wrap {
+ 			width: 900px;      
+  			margin: 40px auto;}
+  	.page-wrap.box1 {
+    margin: 0 auto 40px;
+}     
+			
+	.page-wrap.box2 {
+  			background-image: url("프랭키 배경.png");
+  			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			padding: 90px 0;
+			margin: 20px auto 40px;
 }
-		@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Gothic+A1:wght@100;400;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-    
-    
-    html, body {
-        
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 400;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        background: black; 
-        
-        scroll-snap-type: y mandatory;
-        scroll-behavior: smooth; 
-    }
-
-
-    .gothic-a1-regular {
-  		font-family: "Gothic A1", sans-serif;
-  		font-style: normal;
-  		font-weight: 100-900;
-			font-display: swap;
-			line-height: 1.6;
-			word-break: keep-all;
-    }
-    
-    header, section, .wrap {
-        width: 100%;
-        max-width: none;
-        margin: auto;
-        padding: 0;
-    }
-    
-    section {
-        background: black;
-        padding-top: 50px; 
-        padding-bottom: 50px;
-        
-        
-        min-height: 100vh;
-        scroll-snap-align: start;
-    }
-    
-    
-    .bg-shop{
-        background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN21kaTBycWJkZTk2aW9qdmx2OW52bW1xenZ5Njk1MTZ4NTR3azVpeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MEgGD8bV72hfq/giphy.gif);
-        background-size: cover;
-        background-position: center; 
-        background-attachment: fixed; 
-    }
-
-
-    section {
-        background: black;
-        padding: 100px 0;
-    }
-
-    header {
-        margin: auto;
-        padding: 20px;
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom:0px; 
-    }
-    
-    .wrap img + img {
-        margin-top: 0; 
-    }
-    
-   
-    h3, h4, h5, h6, h7, h8, h9, h10, h11 { 
-        color: white;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 900;
-        margin: 20px 0 10px 0;
-        font-size: 50px; 
-        border-left: 10px solid white; 
-        padding-left: 15px;
-    }
-    
-    .title-bar {
-        border-left: 10px solid white !important; 
-        padding-left: 15px !important;
-    }
-    
-   
-    p {
-        color: white;
-        font-family: 'Gothic A1', sans-serif;
-        font-weight: 500;
-        font-size: 30px; 
-        line-height: 1.6;
-        margin: 0;
-    }
-    
-   
-    .wrap {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px; 
-    }
-
-   
-    .text-block {
-        background: rgba(0, 0, 0, 0.9);
-        border-radius:0px; 
-        padding: 20px; 
-        margin-top: 0px; 
-    }
-
-	footer{
-		background: white;
-		width: 100%;
-		margin: auto;
-		padding: 50px 0;
-		text-align: center;
-        scroll-snap-align: none;
-	}
-    
-    footer p {
-        color: black; 
-        font-size: 25px;
-        margin: 5px 0;
-        padding: 0;
-        font-family: 'Noto Sans KR', sans-serif;
-    }
-    footer a {
-        color: #333;
-        text-decoration: none;
-    }
-
-	/* 추가: 흰색 배경 섹션용 클래스 (세 섹션에만 적용) */
-	.white-section {
-		background-color: white !important;
-		color: black !important;
-	}
-	.white-section .text-block {
-		background: white !important;
-	}
-	.white-section h4, .white-section h5, .white-section h6 {
-		color: black !important;
-	}
-	.white-section .title-bar {
-		border-left-color: black !important;
-		color: black !important;
-	}
-	.white-section p {
-		color: black !important;
-	}
-	.white-section img {
-		
-	}
-
-	</style>
-
-</head>
-<body>
-	
-	<section class="bg-shop">
-		<div class="wrap">
-			<img src="1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+1'" alt="이미지 1">
-			<img src="2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+2'" alt="이미지 2">
-            
-            
-            <div class="text-block">
-				<h3 class="title-bar">듀프(DUPE)가 뭔가요?</h3>
-				<p>듀프란
-			 <span style="font-size: 30px;
-			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">‘Duplicate(복제하다)’</span>에서 유래한 용어로,
-				상표권을 침해하지 않으면서 명품이나 고가 브랜드의 제품의
-				디자인이나 기능이 비슷한 ‘가성비 대체품'을 의미해요.흔히 오해하기 쉬운 짝퉁과는 다른 개념이에요!</p>
-            </div>
-		</div>
-	</section>
-	
-
-	<section>
-		<div class="wrap">
-				<img src="3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+3'" alt="이미지 3">
-            <div class="text-block">
-				<h4 class="title-bar">듀프의 주 소비층은 바로 MZ!</h4>
-				<p>최근 MZ세대들 사이에서 듀프 소비가 유행 중이에요! 대체품 구매를 드러내는 것을 꺼리던 과거와 달리 하나의 소비문화가 되고 있는 듀프 문화의 예시를 알아볼까요?</p>
-            </div>
-		</div>
-	</section>
-	
-	<section>
-		<div class="wrap">
-		<img src="5.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+5'" alt="이미지 5">
-            <div class="text-block">
-                <h5 class="title-bar">
-                    포터 숄더백의 듀프템은? 유니클로!
-                </h5>
-                <p>대표적으로 최근 출시된 <span style="color: #EC1E23;">유니클로</span>(Uniqlo)의 ‘멀티 포켓 숄더백’이 있어요
-                유시다 포터(<span style="color: #EC1E23;">유니클로</span>+요시다 포터)로 불리기도 하는데요
-                브랜드 요시다 포터의 탱커 숄더백을 닮았기 때문이죠
-                포터(Porter)맛 숄더백이라고 불리며
-                품절대란이 일어나기도 했어요!</p>
-            </div>
-		</div>
-	</section>
-
-	<section>
-		<div class="wrap">
-		<img src="4.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/333/fff?text=이미지+4'" alt="이미지 4">
-            <div class="text-block">
-                <h6 class="title-bar">
-                    다양한 분야에서 나타나는 듀프소비
-                </h6>
-                <p>패션 외에도 다양한 분야에서 듀프 제품을 확인할 수 있는데요 다이소의 손앤박 컬러밤은 샤넬 립앤치크밤의 듀프템으로
-                색상이나 지속력 등에는 큰 차이가 없지만 가격은 무려 23배 차이가 나는 것을 통해 듀프제품들의 합리성을 알 수 있죠!
-                이 외에도 일본 삿포로는 스위스 체르마트의 듀스 여행지로 꼽히는등 다양한 분야에서 듀스소비가 행해지고 있어요😯</p>
-            </div>
-		</div>
-	</section>
-
-	<section>
-		<div class="wrap">
-			<h4 style="color: #12FF3D; text-align: center; border-left: none; padding-left: 0;">
-			그렇다면 이 듀프소비가 유행하게 된 이유가 뭘까요?
-			</h4>
+	.page-wrap.box3 {
+  			background-image: url("배경2.png");
+			background-repeat: no-repeat;
+			background-position: center -750px; 
 			
-			<div style="text-align: center; padding: 30px 0;">
-                <span style="font-size: 450px; display: inline-block; color: white;">🤔</span>
-            </div>
-		</div>
-	</section>
+			margin: 20px auto 40px;
+}
+		.box2{
+    	clear: both; 
+    	display: flex;
+    	align-items:center;
+    	margin-top: 20px; 
+		 }
+
+		.box2 .left{
+			  width: 40%; 
+			  padding-right: 20px;}
+		.box2 .right {
+ 			   width: 60%;
+ 			   margin:-70px 30px 0 0;
+				}
+		.box3 .left{
+			  flex-basis: 40%; 
+    		  padding-right: 20px;
+    		  margin-left:40px;}
+		.box3 .right {
+ 		flex-basis: 60%; 
+    	flex-shrink: 0;
+    	margin: 0;
+ 
+}
+		.box1 h1{
+ 		 text-align: center;
+ 		 font-size:100px;
+ 		 font-weight: 600;
+ 		 color: #2B2A2A;
+ 		 margin: 150px 0 0px;}
+
+		.box1 h1 .highlight
+		{color: #FF436F;}	
+
+		.box1 h2{
+ 		 text-align: center;
+ 		 font-size:40px;
+ 		 font-weight: 600;
+ 		 color: #2B2A2A;
+ 		 margin: -270px 0 100px;}
+
+  		.box1 h3{
+ 		 text-align: left;
+ 		 font-size:40px;
+ 		 margin:100px 0 30px;}
+
+		.box1 h3 .highlight 
+		{color: #FF1E53; 
+		font-weight: bold; 
+			    }
+		.box3 h1 {
+	 		 text-align: left;
+	 		 font-size:40px;
+	 		 margin:10px 0 30px ;}
+
+.bubble-wrapper{
+  position: relative;   
+  width: fit-content;         
+  margin: 10px auto;             
+}
+.bubble_image{
+  display: block;
+  width: 890px;               
+  height: auto;
+}
+
+.bubble_text {
+  position: absolute;         
+  top: 30%;                   
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;               
+  font-size: 60px;
+  
+  color: white;               
+  line-height: 1.2;
+}
+.box5 .bubble-wrapper {
+position: relative; 
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.box5 .bubble_image {
+  width: 350px;      
+  height: auto;
+}
+.box5 .left .bubble-wrapper {
+  margin-right: auto; 
+  margin-left: 0;
+}
+
+.box5 .right .bubble-wrapper {
+  margin-left: auto;
+  margin-right: 0;
+}
+.box5 .bubble_text {
+  top: 30%;          
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;  
+  width: 80%;
+  color: #fffff;}
+.box2 h1
+	{text-align: right;
+ 	font-size:60px;
+  white-space: nowrap;
+  margin-bottom: 0px;   
+}
+ .box2 h2
+	{text-align: right;
+ 	font-size:40px;}
+
+.record-center {
+  display: flex;
+  justify-content: center;   
+}
+
+.record {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.disk {
+  width: 90%;
+
+  animation: spin 12s linear infinite;
+}
+
+.audio {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  pointer-events: auto;   
+}
 
 
-	<section class="white-section">
-		<div class="wrap">
-			<img src="7.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+7'" alt="이미지 7">
-            <div class="text-block">
-				<h4 class="title-bar">
-				<span style="font-size: 55px;
-			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">첫번째</span>:SNS & 유튜브 트렌드
-				</h4>
-				<p>듀프는 SNS와 유튜브에서 콘텐츠화되며 더 빠르게 확산되고 있어요. 틱톡에서 ‘듀프’를 검색하면, 오리지널 제품과 듀프 제품을 비교하거나 듀프 쇼핑을 자랑하는 영상이 높은 조회수를 기록고있는데요. 이런 구매 리뷰가 MZ세대들의 소비 욕구를 자극하여 소비문화까지 영향을 미친 것이죠.</p>
-            </div>
-		</div>
-	</section>
-	
-	<!-- 변경: 이 섹션(두번째)도 흰색으로 -->
-	<section class="white-section">
-		<div class="wrap">
-		<img src="don-eulo-gadeughan-sang-wi-byu-syoping-kateu.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+두번째'" alt="이미지 두번째">
-            <div class="text-block">
-            	<h4 class="title-bar">
-            	<span style="font-size: 55px;
-			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">두번째</span>:계속되는 고물가 시대 
-                
-                </h4>
-                <p>경기 침체, 고물가, 소비 양극화와 같은 경제적 배경 속에서
-                소비자들은 ‘가격 대비 최대의 만족’을 추구하는 심리가 커졌어요 그로 인해 경제적 부담을 줄여주고 고품질 제품을 저렴하게
-                이용할 수 있는 듀프 제품을 선호하게 된거죠!</p>
-            </div>
-		</div>
-	</section>
+@keyframes spin { 
+  100% { transform: rotate(360deg); }
+}
+.page-wrap.box5,
+.page-wrap.box6,
+.page-wrap.box7,
+.page-wrap.box8,
+.page-wrap.box9,
+.page-wrap.box10,
+.page-wrap.box11 {
+    text-align: center;
+    margin: 0 auto;
+}
+CSS
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 80px;
+}
 
-	 	
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 3px 0;
+}
 
-	<section class="white-section">
-		<div class="wrap">
-			<img src="9.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x400/fff/000?text=이미지+9'" alt="이미지 9">
-            <div class="text-block">
-                <h4 class="title-bar">
-                	<span style="font-size: 55px;
-			 font-weight: 700;
-			  display: inline-block; color: #12FF3D;">세번째</span>:MZ의 놀이로 자리잡은 듀프
-                </h4>
-                <p>미국 시장조사기업 YPulse의 설문조사에 따르면,응답자의 51%는 “듀프를 찾는 것이 즐겁다”고 답했어요.
-                이 설문조사 결과를 통해서 듀프 소비가 MZ세대에게 경제적인 선택을 넘어
-                새로운 문화로 자리 잡고 있음을 보여주죠.</p>
-            </div>
-		</div>
-	</section>
+.footer-home-icon {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    margin-bottom: 30px; 
+    transition: transform 0.3s; 
+}
+.home-icon-link {
+    display: block;
+    width: 30px;
+    margin: 0 auto 10px auto; 
+}
+		</style>
+	</head>
 
-	<section>
-		<div class="wrap">
-		<h4 style="text-align: center; border-left: none;"><span style="font-size: 75px;
-			 font-weight: 900;
-			  display: inline-block; color: #12FF3D;">이제는 유행을 넘어 우리의 일상이 되어버린 듀프</span>
+	<body>
+		<div class="page-wrap box1"style="position:relative;">
+			<img src="표지.png" 
+    			style="position:absolute; 
+    			top:0; left:0; width:100%; height:auto; z-index:-1;">
+			<div class="bubble-wrapper">
+            	<img src="말풍선.png" class="bubble_image">
+				<h1 class="bubble_text" style="font-family: 'HsJandari', sans-serif;">
+    				<span class="highlight">하우스</span>(HOUSE)!<br>집도 아니고 뭔데?</h1>
+    			<h2>-하우스 장르 알아보기-</h2>
+    		</div>
+    	
 			
-		</h4>
 
-		<p style="text-align: center;">여러분들은 듀프를 어떻게 생각하시나요?</p>
+		<div class="box1-content" style="margin-top:850px;">
+				<h3 class="t1">한번쯤은 다들 들어보셨을<br>
+					<span class="highlight"> 하우스!</span>
+    				<img src="집 아이콘.png" class="inline-icon"
+    				style="width:40px;height:auto;">
+    			</h3>
+
+    				<p>
+					하우스는 바로 음악 장르를 말하는데요<br>
+					이 하우스라는 장르는 시카고의 <strong style="color:#FF1E53">웨어하우스</strong>라는 클럽에서 
+					시작되었어요!<br>
+					</p>
+					<p>
+					1970년대 유행하던 디스코 이후로 당시 마약과 함께<br>
+					클럽에서 문제가 되면서 디스코에 대한 저항운동<br>
+					<strong style="color:#FF1E53">'Disco Sucks'</strong>가 생겨났는데요 <br>
+					</p>
+
+					<img src="disco sucks.png" class="disco-image"
+					style="
+					width: 650px; 
+					height: auto;
+					float: right; 
+            		margin: 120px 0 120px 20px;">
+
+					<p style="clear:right;">
+					이로 인해 1980년대 디스코 음악이 듣기 힘들어질 즈음에<br>
+					시카고의 대형 게이클럽이 웨어하우스에서  
+					디제잉을 하던<strong style="color:#FF1E53"> 프랭키 너클즈</strong>가 디제잉한 곡들에서 유래되었어요!
+					</p>
+			
+		</div>
 	</div>
-	</section>
-	
-<footer>
-	<p>© 2025 Daeun Lee. All rights reserved.</p>
-	<p><a href="#">이용약관</a> |
-	 	<a href="#">개인정보처리방침</a></p>
-</footer>
 
+	<div class="page-wrap box2">
+			<div class="left">
+				<img src="프랭키.png";class="photo1" style="
+					width: 500px; 
+					height: auto;
+					display: block;"
+					margin: 0 50px 0>
+			</div>
 
-</body>
+			<div class="right">
+				<h1 style="color: #00FF37; 
+				font-weight: 800;
+				font-size: 70px;
+				background-color: #050505;padding:5px 10px;">
+				DJ 프랭키 너클스</h1>
+				<h2 style="margin:0px">Frankie Knuckles<br>
+				1955.1.18~2014.3.31</h2>
+
+				<p style="text-align:
+				right; margin-top:30px;
+				color:2A2A2A";>
+
+					1980년대 초 시카고에서 시작되어<br> 
+					전 세계로 퍼진 음악 장르인<br> 하우스 음악의
+					발전과 대중화에 중요한 역할을 하여<br>
+					<strong>"하우스 음악의 대부"</strong>라고 불린다.<br>
+				</p>
+
+			<p style="text-align:right; ">
+
+			그는 소울, 펑크,재즈 등의 장르를<br>
+			혼합하여 음악을 창작하였고<br>
+			이는 후대 다양한 분류의<br>
+			음악들에 많은 영향을 주었다.<br>
+			</p>
+
+			</div>
+	</div>
+<div class="page-wrap box3" style="display:flex; align-items:flex-end;">
+
+	<div class="left">
+				<h1>하우스의 유래는?</h1>
+					<p>
+						한 설에 의하면 프랭키 너클즈가<br>'웨어하우스'에서 디제잉을 할 때<br>
+						사람들이 인근 음반샵에서<br>
+						<strong>'웨어하우스에서 틀던 음악'</strong>을 찾기 시작했고,<br>
+						음반샵에서 이런 류의 음악을 따로 분류해서<br> 
+						팔던 것을 줄여서 <strong>'하우스'</strong>라는<br>
+						이름의 유래가 되었다고 합니다.<br>
+					<p/>
+					<img src="사람.png"
+					style="width: 400px; 
+					height: auto;
+					display:block; 
+					margin:40px 0 0 0;">
+	</div>
+	<div class="right" style="flex:0 0 auto; display:flex; justify-content:flex-end;">
+		<img src="웨어하우스.png" class="photo1" 
+				style="
+					max-width:70%; 
+					height:auto; 
+					display:block; 
+					margin:0;">
+    </div>
+		
+	</div>
+</div>
+
+<div class="page-wrap box4">
+			<h1>그렇다면 프랭키 너클스의 하우스 어땠을까?</h1>
+					<div class="record-center">
+						<div class="record">
+  						<img src="레코드판.png" class="disk">
+  						<audio src="프랭키음악.mp3" controls class="audio"></audio>
+</div>
+
+		</div> 
+		</div> 
+		<div class="page-wrap box5">
+			<div class="left">
+				<div class="bubble-wrapper">
+				<img src="하우스 말풍선.png" class="bubble_image house1">
+				<h1 class="bubble_text">그럼 하우스의 특징은 무엇일까요?</h1>
+				
+			</div>
+		</div>
+			<div class="right">
+				<div class="bubble-wrapper">
+				<img src="말풍선2.png" class="bubble_image house2">
+				<h2 class="bubble_text">바로 4/4박자!</h2>
+			</div>
+			</div>
+					<p style="text-align:center ;margin-bottom: 20px">
+						<p>
+						하우스 음악에 깔린 비트를 듣다 보면 
+						기계적으로 ‘찍어낸’ 느낌이 강하게 들텐데요!
+						</p>
+						<p>
+						하우스는 정적인 4/4박자를 사용하며
+						드럼 머신으로 찍어낸듯한 리듬이 특징이에요
+						</p>
+						<p>
+						이런 하우스 음악을 기반으로 개러지 하우스, 일레트로닉 하우스, 
+						디트로이트 하우스, 딥 하우스 등
+						</p>
+						<p>
+						수 많은 하우스 음악의 하위 장르들이 탄생하게 되었답니다🎶 
+					<p/>
+		</div> 
+		<div class="page-wrap box6">
+				<h1>최근에는 이런 다양한 하우스 장르들이<br>
+					케이팝에도 사용되고 있는데요
+				</h1>
+				<h2>한번 들어보실까요?</h2>
+		</div> 
+		<div class="page-wrap box7">
+				<h1 class="song1">⚡️일렉트로 하우스(Electro House)</h1>
+						<p>
+						일렉트로 하우스는 말 그대로 
+						‘전자맛’이 강한 하우스예요<br>
+						베이스가 두껍고, 신디사이저 소리가 
+						아주 강하게 치고 들어와요<br>
+						비트가 빠르고, 드롭(beat drop) 부분에서<br>에너지가 폭발하는 게 특징이에요!
+						</p>
+						<p>
+							대표적인 케이팝으로는 블랙핑크의 붐바야가 있어요!
+						</p>
+		</div> 
+		<div class="page-wrap box8">
+				<h1 class="song2">️⛓️테크 하우스 (Tech House)</h1>
+		
+						<p>테크 하우스는  테크노(Techno)와 
+							하우스(House)의 중간을 말해요
+						<br>하우스처럼 4/4 리듬을 유지하면서도, 
+							테크노처럼 미니멀하고 반복적인 사운드를 써요<br>복잡한 멜로디보다 ‘리듬감’과 ‘그루브’에 집중한 스타일이며<br> 듣다 보면 비슷한 패턴이 계속되는데<br>
+							이상하게 중독되는 느낌이에요
+						</p>
+						<p>
+							대표적인 케이팝으로는 에스파의 Whiplash가 있어요!
+						</p>
+
+					</div>
+
+		<div class="page-wrap box9">
+				<h1 class="song3">️️🌙딥 하우스(Deep House)</h1>
+				
+					<p>테크 하우스는  테크노(Techno)와 하우스(House)의 중간을 말해요<br>딥하우스는 하우스 중에서도 제일 부드럽고
+ 					감성적인 스타일이에요.<br>재즈, 소울, 알앤비에서 영향을 많이 받아서,<br> 멜로디가 따뜻하고 리드미컬해요.<br>리듬은 여전히 4/4지만, 전체적으로 차분하고 분위기 있어요
+					</p>
+					<p>
+					대표적인 케이팝에는 샤이니의 View와 f(x)의 4walls가 있어요!</p>
+
+		</div>
+		<div class="page-wrap box10">
+				<h1 class="song4">️️🔌플러그앤비 하우스(Pluggnb House)</h1>
+			
+					<p>플러그앤비 하우스는 힙합의 하위 장르인 플러그(Plug)와<br>
+						R&B를 결합한 '플러그앤비'에 하우스 장르의 
+						드럼 비트와 베이스가 더해져,<br>
+						Y2K 레트로 감성과 댄서블한 리듬을 동시에 지닌 <br>
+						독특한 음악 스타일을 형성해요
+					</p>
+					<p>
+						대표적인 케이팝에는 아일릿의 Magnetic이 있어요!
+					</p>
+		</div>
+		<div class="page-wrap box11">
+				<h1 class="song5">️️👆🏻프로그레시브 하우스 Progressive House</h1>
+				
+					<p>프로그레시브 하우스는 1990년대 초 영국에서 
+						시작된 하우스 음악의 한 종류로,<br>
+						점진적으로 변화하는 구조와<br>
+						감정적인 멜로디가 특징적이에요<br>
+						곡이 진행될수록 사운드가 천천히 쌓이고 변하며,<br>
+						 마치 하나의 “여정”처럼 느껴지게 만들죠!
+					</p>
+					<p>
+						대표적인 케이팝으로는 nct dream의 Trigger the Fever나 프로듀스101의 나야나 등이 있어요!
+					</p>
+		<div class="page-wrap box12">
+			<h1>다양한 장르로 변화하며 발전하고 있는 하우스 음악 어떠셨나요?</h1>
+			<h2>여러분이 평소 즐겨 듣는 노래 속에서도 하우스의 매력을 찾아보세요!</h2>
+		</div>
+		<div class="footer">
+        	<div class="footer-content">
+            <a href="https://music.apple.com/kr/playlist/%ED%95%98%EC%9A%B0%EC%8A%A4-%EC%BC%80%EC%9D%B4%ED%8C%9D-%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8/pl.u-kv9lbK5t721DjL5" target="_blank" class="home-icon-link">
+                <img src="집 아이콘.png" class="footer-home-icon">
+            </a>
+            <p>&copy; 디미디 하우스 장르 알아보기 All rights reserved 이다은</p>
+            <p>Contact:daeun05720@seoultech.ac.kr </p>
+        </div>
+    </div>
+    </body>
+	</body> 
 </html>
